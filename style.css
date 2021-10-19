@@ -1,0 +1,329 @@
+/********** Style.css **********/
+/*** by Julia ******************/
+
+/********** Elementos Principais **********/
+*{
+	font-family: 'Rubik', sans-serif;
+}
+
+body{
+	margin:0;
+	background-color:#494949;
+}
+
+.container{
+	padding:0px 80px;
+}
+
+/********** Elementos Gerais **********/
+#conteudo-pagina{
+	width:100%;
+	height:2000px;
+}
+
+.tit-geral{
+	color:white;
+}
+
+.txt-geral{
+	color:white;
+	font-size:18px;
+}
+
+.btn-geral {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.btn-geral:hover {
+    color: #a805c3;
+    background: white;
+	padding: 10px 15px!important;
+}
+
+.icn-btn-geral {
+    display: none!important;
+    padding-left: 5px;
+}
+
+.btn-geral:hover .icn-btn-geral {
+    display: inline!important;
+}
+
+/********** Menu Principal **********/
+.barra-nav{
+	height: 80px;
+    position: fixed;
+    width: 100%;
+}
+
+#menu-principal{
+	width:100%!important;
+	position:fixed;
+	height: 280px;
+}
+
+.img-logo{
+	max-height:65px;
+	padding: 10px 0;
+}
+
+.nav-colored {
+	overflow: hidden;
+	width:100%;
+	box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.5);
+	background-color: #3e3e3e;
+	animation: slide 0.5s forwards;
+}
+
+#btns-nav > a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 28px 16px;
+  text-decoration: none;
+}
+
+.item-menu-pai {
+  float: left;
+  overflow: hidden;
+}
+
+.item-menu-pai .btn-item-menu-pai {
+  font-size: 20px;  
+  border: none;
+  border-radius: 0px;
+  outline: none;
+  color: white;
+  padding: 28px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+#btns-nav .btns-nav a:hover, .item-menu-pai:hover .btn-item-menu-pai {
+  background-color: white;
+  color: #a805c3;
+}
+
+.item-menu-cont {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.item-menu-cont a {
+  float: none;
+  color: #a805c3;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size:18px;
+}
+
+.item-menu-cont a:hover {
+  background-color: #a805c3;
+  color: white;
+}
+
+.item-menu-pai:hover .item-menu-cont {
+  display: block;
+  position: fixed;
+}
+
+#btns-nav{
+	float:right;
+}
+
+#logo-nav{
+	float:left;
+}
+
+.fa-chevron-down {
+    font-size: 12px;
+}
+
+/**** Slide Show ****/
+.mySlides{
+	display:none;
+}
+
+
+/********** Rodapé **********/
+#rodape {
+    width: 100%;
+	height:80px;
+}
+
+#container-footer{
+	border-top: 1px solid white;
+	margin:0px 80px;
+}
+
+#container-footer span, #container-footer span{
+	color:white;
+}
+
+.footer-left{
+	float:left;
+}
+
+.footer-right{
+	float:right;
+}
+
+.footer-left, .footer-right {
+    padding: 30px 0px;
+}
+
+/********** Home **********/
+#pagina-home .container{
+	margin:50px;
+}
+
+/********** FAQ **********/
+#pagina-faq{
+	padding:100px 0px 50px 0px;
+}
+
+/********** Accordion - FAQ **********/
+.accordion {
+  background-color: #c96ad9;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #7c128c;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:before {
+  content: '+';
+  font-size: 18px;
+  color: white!important;
+  float: right;
+  font-weight: 900;
+  margin-left: 5px;
+}
+
+.active:before {
+  content: "-";
+}
+
+button:nth-child(1), button:nth-child(5), button:nth-child(9) {
+    background-color: #a805c3;
+}
+
+
+/********** Contato **********/
+#contato{
+	padding:100px 0px 50px 0px;
+}
+
+/***** Slider *****/
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin-top: -100px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}

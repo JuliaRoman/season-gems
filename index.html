@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Style+Script&display=swap" rel="stylesheet">
+		<link href="fonts/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+		<link rel="icon" href="midias/images/favicon.png" sizes="16x32" type="images.png" />
+		<script type="text/javascript" src="functions.js"></script>
+		<title>Season Geams</title>
+		<div class="barra-nav nav-transparent"><iframe id="menu-principal" src="header.html" frameborder="0" seamless></iframe></div>
+	</head>
+	
+	<body>
+		
+		
+		<iframe id="conteudo-pagina" name="iframe-conteudo" src="pages/home.html" frameborder="0"></iframe>	
+
+	</body>
+	
+	<iframe id="rodape" src="footer.html" frameborder="0"></iframe>
+	
+	<script>
+		/*** Mudança de classe - menu ***/		
+		window.addEventListener('scroll', function (e) {
+		var nav = document.querySelector('.barra-nav');
+        
+		if (document.documentElement.scrollTop || document.body.scrollTop > window.innerHeight) {
+            nav.classList.add('nav-colored');
+            nav.classList.remove('nav-transparent');
+        } else {
+            nav.classList.add('nav-transparent');
+            nav.classList.remove('nav-colored');
+        }
+    });
+	</script>
+	
+</html>
