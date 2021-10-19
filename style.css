@@ -249,6 +249,7 @@ button:nth-child(1), button:nth-child(5), button:nth-child(9) {
 .slideshow-container {
   position: relative;
   margin-top: -100px;
+  overflow-x: clip !important;
 }
 
 /* Next & previous buttons */
