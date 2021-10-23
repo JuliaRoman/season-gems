@@ -19,7 +19,7 @@
 			</center></div>
 			
 			<!-- Conteúdo da página -->
-			<div id="pagina-contato">
+			
 			<!-- Formulário atualizações - Inicio -->	
 			<div class="form-atualizacoes">
 				<form action="/pagina-processa-dados-do-form" method=""><!-- Metodo não adicionado, será relacionado ao back-end -->
@@ -39,28 +39,61 @@
 			</div>
 			<!-- Formulário atualizações - Final -->
 			
+			<!-- Formulário dúvidas/sugestões/feedback - Inicio -->	
+			<div class="form-comentario" style="background-color:#606060;">
+				<form action="/pagina-processa-dados-do-form" method=""><!-- Metodo não adicionado, será relacionado ao back-end -->
+					<div>
+						<label for="name">Entre em contato com a nossa equipe!</label>
+					</div>
+					<br><br>
+					<div class="metade-campos">
+						<input type="text" placeholder="Digite seu nome" id="name" />
+						<input type="email" placeholder="Digite seu e-mail" id="mail" />
+					</div>
+					<div>
+						<input type="text" placeholder="Digite o assunto da mensagem" id="subject" />
+					</div>
+					<div>
+						<textarea type="textarea" placeholder="Digite a mensagem" id="message" /></textarea>
+					</div>
+
+					<div class="button">
+						<button type="submit">Enviar</button>
+					</div>
+				</form>
+				<img src="../midias/images/primavera.jpg" style="max-width: 100%;">
+			</div>
+			<!-- Formulário dúvidas/sugestões/feedback - Final -->
+			
 			<!-- Widget que direciona ao manual do usuário -->
-			<div class="widget-nova-page" style="grid-template-columns: 30% 70%;background-color:#606060;">
-					<div>
-						<a class="btn-geral" href="../midias/docs/manual_do_jogo___Season_Gems.pdf" target="_blank" style="float: left;margin: 35px 0;">Manual do usuário<i class="icn-btn-geral fa fa-arrow-circle-right"></i></a>
-					</div>
-					<div>
-						<h1 class="tit-geral" style="text-align:right;">Título</h1>
-						<p class="txt-geral" style="text-align:right;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-					</div>
+			<div class="widget-nova-page" style="grid-template-columns: 30% 70%;">
+				<div>
+					<a class="btn-geral" href="../midias/docs/manual_do_jogo___Season_Gems.pdf" target="_blank" style="float: left;margin: 35px 0;">Manual do usuário<i class="icn-btn-geral fa fa-arrow-circle-right"></i></a>
+				</div>
+				<div>
+					<h1 class="tit-geral" style="text-align:right;">Título</h1>
+					<p class="txt-geral" style="text-align:right;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+				</div>
 			</div>
 			
 			<!-- Widget que direciona a página faq -->			
-			<div class="widget-nova-page">
-					<div>
-						<h1 class="tit-geral">Título</h1>
-						<p class="txt-geral">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-					</div>
-					<div>
-						<a class="btn-geral" href="faq.html" target="iframe-conteudo" style="float: right;margin: 35px 0;">FAQ<i class="icn-btn-geral fa fa-arrow-circle-right"></i></a>
-					</div>
+			<div class="widget-nova-page" style="background-color:#606060;">
+				<div>
+					<h1 class="tit-geral">Título</h1>
+					<p class="txt-geral">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+				</div>
+				<div>
+					<a class="btn-geral" href="faq.html" target="iframe-conteudo" style="float: right;margin: 35px 0;">FAQ<i class="icn-btn-geral fa fa-arrow-circle-right"></i></a>
+				</div>
 			</div>
-		</div>
+			
+			<!-- Widget que direciona a página de download do jogo -->
+			<div>
+				<div>
+					<h1 class="tit-geral" style="text-align:center;">Faça download da versão Beta do Jogo</h1>
+					<center><a class="btn-geral" href="download.html" target="iframe-conteudo" style="margin: 35px 0;">Download<i class="icn-btn-geral fa fa-arrow-circle-right"></i></a></center>
+				</div>
+			</div>
 
 	</body>
 
