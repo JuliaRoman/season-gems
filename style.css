@@ -18,7 +18,7 @@ body{
 /********** Elementos Gerais **********/
 #conteudo-pagina{
 	width:100%;
-	height:2000px;
+	height:4000px;
 }
 
 .tit-geral{
@@ -41,6 +41,7 @@ body{
 
 .btn-geral:hover {
     color: #a805c3;
+	font-weight: 600;
     background: white;
 	padding: 10px 15px!important;
 }
@@ -52,6 +53,23 @@ body{
 
 .btn-geral:hover .icn-btn-geral {
     display: inline!important;
+}
+
+.breadcrumbs .tit-geral {
+    padding: 150px 80px 0px 80px;
+	margin:0;
+	font-size: 50px;
+}
+
+.breadcrumbs .txt-geral {
+    padding: 0px 80px 80px 80px;
+	font-size: 25px;
+	margin-bottom: 0px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 /********** Menu Principal **********/
@@ -106,9 +124,9 @@ body{
   margin: 0;
 }
 
-#btns-nav .btns-nav a:hover, .item-menu-pai:hover .btn-item-menu-pai {
-  background-color: white;
-  color: #a805c3;
+#btns-nav .btns-nav a:hover, .item-menu-pai:hover .btn-item-menu-pai, #btns-nav > a:hover {
+  border-bottom: 5px solid #a805c3;
+  padding: 25px 16px!important;
 }
 
 .item-menu-cont {
@@ -122,17 +140,17 @@ body{
 
 .item-menu-cont a {
   float: none;
-  color: #a805c3;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
+  background-color:#858585;
   display: block;
   text-align: left;
   font-size:18px;
 }
 
 .item-menu-cont a:hover {
-  background-color: #a805c3;
-  color: white;
+  color: #a505c0;
 }
 
 .item-menu-pai:hover .item-menu-cont {
@@ -152,6 +170,22 @@ body{
     font-size: 12px;
 }
 
+a.btn-menu-download:after {
+    background-color: #a805c3;
+    content: "Beta";
+    color: white;
+    font-size: 14px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 8px;
+    right: 375px;
+	border-radius: 5px;
+}
+
+a.btn-menu-download:hover::after {
+    top: 5px;
+}
+
 /**** Slide Show ****/
 .mySlides{
 	display:none;
@@ -161,7 +195,7 @@ body{
 /********** Rodapé **********/
 #rodape {
     width: 100%;
-	height:80px;
+	height:100px;
 }
 
 #container-footer{
@@ -190,14 +224,9 @@ body{
 	margin:50px;
 }
 
-/********** FAQ **********/
-#pagina-faq{
-	padding:100px 0px 50px 0px;
-}
-
 /********** Accordion - FAQ **********/
 .accordion {
-  background-color: #c96ad9;
+  background-color: #858585;
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -210,12 +239,12 @@ body{
 }
 
 .active, .accordion:hover {
-  background-color: #7c128c;
+  background-color: #7c128c!important;
 }
 
 .panel {
   padding: 0 18px;
-  background-color: white;
+  background-color: #f1f1f1;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -230,12 +259,12 @@ body{
   margin-left: 5px;
 }
 
-.active:before {
+.faixas-accordion .active:before {
   content: "-";
 }
 
-button:nth-child(1), button:nth-child(5), button:nth-child(9) {
-    background-color: #a805c3;
+.faixas-accordion button:nth-child(1), .faixas-accordion button:nth-child(5), .faixas-accordion button:nth-child(9) {
+    background-color: #606060;
 }
 
 
@@ -248,7 +277,6 @@ button:nth-child(1), button:nth-child(5), button:nth-child(9) {
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  margin-top: -100px;
   overflow-x: clip !important;
 }
 
@@ -277,17 +305,6 @@ button:nth-child(1), button:nth-child(5), button:nth-child(9) {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
 }
 
 /* The dots/bullets/indicators */
@@ -327,4 +344,85 @@ button:nth-child(1), button:nth-child(5), button:nth-child(9) {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+/***** Equipe *****/
+.foto-perfil{
+	background-color: white;
+    border-radius: 200px;
+    margin: 50px 80px;
+}
+
+.nome-perfil{
+	font-size:40px!important;
+}
+
+.equipe-left{
+	margin: 50px 0px 50px 80px;
+	text-align: left;
+	float:left;
+}
+
+.equipe-right{
+	margin: 50px 80px 50px 0px;
+	float:right;
+	text-align: right;
+}
+
+.descricao-perfil{
+    font-size: 25px;
+	line-height:1.5;
+}
+
+/***** Formulário para atualizações *****/
+.form-atualizacoes {
+    padding: 50px 100px;
+    background-color: #858585;
+}
+
+.form-atualizacoes form {
+    display: grid;
+    grid-template-columns: 25% 30% 35% 10%;
+}
+
+.form-atualizacoes label {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.form-atualizacoes input {
+    font-size: 22px;
+    background-color: #494949;
+    border-radius: 5px;
+    width: 90%;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+}
+
+.form-atualizacoes button {
+    background-color: #494949;
+    color: white;
+    font-size: 22px;
+    padding: 5px 22px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-atualizacoes button:hover {
+    background-color: #a805c3;
+    cursor: pointer;
+}
+
+/****** Elementos que levam a outras páginas *****/
+
+/***** Simples *****/
+
+/**** Com texto ****/
+.widget-nova-page{
+	display: grid;
+    grid-template-columns: 70% 30%;
+    padding: 50px 80px;
+    background-color: #858585;
 }

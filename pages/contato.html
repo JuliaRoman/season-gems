@@ -2,68 +2,66 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="../style.css">
 		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Style+Script&display=swap" rel="stylesheet">
-		<link href="fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
-		<link rel="icon" href="images/favicon.png" sizes="16x32" type="images.png" />
+		<link href="../fonts/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+		<link rel="icon" href="../images/favicon.png" sizes="16x32" type="images.png" />
 		<script type="text/javascript" src="functions.js"></script>
 		<title>Season Geams</title>
 	</head>
 	
 	<body>
-	<!-- Menu Horizontal -->
-		<div class="barra-nav">
-			<div class="container">
-				<div id="logo-nav">
-				  <a href="index.html" style="padding:10px 0!important;"><img class="img-logo" src="images/logo.png"></a>
-				</div>
-			  <div id="btns-nav">
-				  <a href="index.html">Home</a>
-				  <a href="historia.html">História</a>
-				  <div class="item-menu-pai">
-					<button class="btn-item-menu-pai">Wiki
-					  <i class="fa fa-caret-down"></i>
-					</button>
-					<div class="item-menu-cont">
-					  <a href="personagens.html">Personagens</a>
-					  <a href="mapas.html">Mapas</a>
-					  <a href="gemas.html">Gemas</a>
+		<div id="pagina-contato">
+			<!-- Breadcrumbs -->
+			<div class="slideshow-container breadcrumbs" style="background:url(../midias/images/banner-estacoes-sombra.png);height:350px;"><center>
+				<h1 class="tit-geral">Contato</h1>
+				<p class="txt-geral">Mande sua dúvida/sugestão/feedback para nós!</p>
+			</center></div>
+			
+			<!-- Conteúdo da página -->
+			<div id="pagina-contato">
+			<!-- Formulário atualizações - Inicio -->	
+			<div class="form-atualizacoes">
+				<form action="/pagina-processa-dados-do-form" method=""><!-- Metodo não adicionado, será relacionado ao back-end -->
+					<div>
+						<label for="name">Receba atualizações sobre o jogo</label>
 					</div>
-				  </div>
-				  <a href="download.html">Download</a>
-				  <div class="item-menu-pai">
-					<button class="btn-item-menu-pai">Suporte
-					  <i class="fa fa-caret-down"></i>
-					</button>
-					<div class="item-menu-cont">
-					  <a href="manual-do_usuario.html">Manual do usuário</a>
-					  <a href="faq.html">FAQ</a>
-					  <a href="contato.html">Contato</a>
+					<div>
+						<input type="text" placeholder="Digite seu nome" id="name" />
 					</div>
-				  </div>
-				  <a href="equipe.html">Equipe</a>
-			  </div>
-			</div>			  
-		</div>
-	<!-- Final - Menu Horizontal -->
-	
-	<!-- Página -->
-		<div id="contato">
-			<div class="container">
-				
+					<div>
+						<input type="email" placeholder="Digite seu e-mail" id="mail" />
+					</div>
+					<div class="button">
+						<button type="submit">Enviar</button>
+					</div>
+				</form>
+			</div>
+			<!-- Formulário atualizações - Final -->
+			
+			<!-- Widget que direciona ao manual do usuário -->
+			<div class="widget-nova-page" style="grid-template-columns: 30% 70%;background-color:#606060;">
+					<div>
+						<a class="btn-geral" href="../midias/docs/manual_do_jogo___Season_Gems.pdf" target="_blank" style="float: left;margin: 35px 0;">Manual do usuário<i class="icn-btn-geral fa fa-arrow-circle-right"></i></a>
+					</div>
+					<div>
+						<h1 class="tit-geral" style="text-align:right;">Título</h1>
+						<p class="txt-geral" style="text-align:right;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+					</div>
+			</div>
+			
+			<!-- Widget que direciona a página faq -->			
+			<div class="widget-nova-page">
+					<div>
+						<h1 class="tit-geral">Título</h1>
+						<p class="txt-geral">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+					</div>
+					<div>
+						<a class="btn-geral" href="faq.html" target="iframe-conteudo" style="float: right;margin: 35px 0;">FAQ<i class="icn-btn-geral fa fa-arrow-circle-right"></i></a>
+					</div>
 			</div>
 		</div>
 
 	</body>
-	
-	<footer>
-		<div id="top-footer">
-			<center style="padding:40px 0px;"><span>Espaço de rodapé</span></center>
-		</div>
-		
-		<div id="bottom-footer">
-			<center style="padding:15px 0px;"><span>by Julia Romani Barreta</span></center>
-		</div>
-	</footer>
-	
+
 </html>
