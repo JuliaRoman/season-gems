@@ -14,26 +14,14 @@
 	
 	<body>
 		
-		
-		<iframe id="conteudo-pagina" name="iframe-conteudo" src="pages/home.html" frameborder="0"></iframe>	
+		<iframe id="conteudo-pagina" name="iframe-conteudo" src="pages/home.html" frameborder="0" onload="trocaMenu()"></iframe>	
 
 	</body>
 	
 	<iframe id="rodape" src="footer.html" frameborder="0"></iframe>
 	
 	<script>
-		/*** Mudança de classe - menu ***/		
-		window.addEventListener('scroll', function (e) {
-		var nav = document.querySelector('.barra-nav');
-        
-		if (document.documentElement.scrollTop || document.body.scrollTop > window.innerHeight) {
-            nav.classList.add('nav-colored');
-            nav.classList.remove('nav-transparent');
-        } else {
-            nav.classList.add('nav-transparent');
-            nav.classList.remove('nav-colored');
-        }
-    });
+		
 	</script>
 	
 </html>
