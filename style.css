@@ -18,7 +18,7 @@ body{
 /********** Elementos Gerais **********/
 #conteudo-pagina{
 	width:100%;
-	height: 4000px;
+	height: 4500px;
 }
 
 .tit-geral{
@@ -55,6 +55,12 @@ body{
 
 .btn-geral:hover .icn-btn-geral {
     display: inline!important;
+}
+
+.breadcrumbs div{
+	background-position:center!important;
+	background-repeat:no-repeat!important;
+	background-size:cover!important;
 }
 
 .breadcrumbs .tit-geral {
@@ -474,11 +480,25 @@ a.btn-menu-download:hover::after {
 	}
 	
 	.widget-ant-prox-page {
-		grid-template-columns: 25% 50% 25%!important;
+		grid-template-columns: 30% 40% 30%!important;
 	}
 	
 	.form-atualizacoes form {
 		grid-template-columns: 30% 31% 31% 8%!important;
+	}
+	
+	.mapas{
+		display: grid;
+		grid-template-columns: 70% 30%!important;
+	}
+	
+	.conteudo-wiki.menor{
+		display:block!important;
+		margin-bottom:30px;
+	}
+	
+	.conteudo-wiki.maior{
+		display:none!important;
 	}
 }
 
@@ -532,6 +552,38 @@ a.btn-menu-download:hover::after {
     filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
 }
 
+.mapas{
+	display: grid;
+    grid-template-columns: 35% 45% 20%;
+}
+
+.inverno, .verao, .primavera, .outono{
+	padding: 75px 80px!important;
+}
+
+.outono, .primavera{
+	background-color:#606060!important;
+}
+
+.img-mapas{
+	transition: all 0.5s;
+	max-height:400px;
+	border-radius:50px;
+}
+
+.img-mapas:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+	-webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+.mapas span{
+	font-size:25px;
+	padding:15px 0;
+	color:#3e3e3e;
+}
+
 /***** Conteúdo - Wiki (Personagens / Mapas / Gemas) *****/
 .conteudo-wiki .txt-geral {
     font-size: 22px;
@@ -552,8 +604,58 @@ a.btn-menu-download:hover::after {
 	transition: background 500ms ease-in-out;
 	background-position: 100%;
 	background-size: 400%;
+	margin-right:50px;
 }
 
 .conteudo-wiki:hover{
 	background-position: 0;
 }
+
+
+/**********************************************************************************************
+SVG
+**********************************************************************************************/
+tspan { white-space:pre; }
+.gema-svg { fill:#3e3e3e; } 
+
+.mini-gema{margin-bottom: 5px;}
+
+.mini-gema:hover span{color:white!important;}
+
+.ciano:hover .gema-svg{fill:#00dedf!important;}
+
+.ambar:hover .gema-svg{fill:#e9c476!important;}
+
+.jade:hover .gema-svg{fill:#00b781!important;}
+
+.pessego:hover .gema-svg{fill:#f4d9aa!important;}
+
+.verde-claro:hover .gema-svg{fill:#78c156!important;}
+
+.chumbo:hover .gema-svg{fill:#273538!important;}
+
+.tomate:hover .gema-svg{fill:#fe5335!important;}
+
+.sela-marrom:hover .gema-svg{fill:#743b2a!important;}
+
+.cafe:hover .gema-svg{fill:#2a0e0a!important;}
+
+.castanho-arenoso:hover .gema-svg{fill:#ff8d5b!important;}
+
+.ferrico-vermelho:hover .gema-svg{fill:#a73c2c!important;}
+
+.bistre:hover .gema-svg{fill:#413328!important;}
+
+.mediummaqua:hover .gema-svg{fill:#80d5e9!important;}
+
+.violeta-escuro:hover .gema-svg{fill:#3c4772!important;}
+
+.celeste:hover .gema-svg{fill:#0092dd!important;}
+
+.branco-neve:hover .gema-svg{fill:#e0eff4!important;}
+
+.cinza-ardosia:hover .gema-svg{fill:#595b72!important;}
+
+.azul-ardosia:hover .gema-svg{fill:#3e56a0!important;}
+
+.joias-menores{display:none;}
