@@ -4,71 +4,116 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="../style.css">
 		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Style+Script&display=swap" rel="stylesheet">
-		<!-- link href="fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet" -->
-		<!-- script type="text/javascript" src="functions.js"></script -->
+		<link href="../fonts/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/c529ef0d01.js" crossorigin="anonymous"></script>
+		<link rel="icon" href="../midias/images/favicon.png" sizes="16x32" type="images.png" />
+		<script type="text/javascript" src="../functions.js"></script>
+		<title>História - Season Geams</title>
 	</head>
 	
-	<body>
+	<body onload="slider()">
+		<div class="barra-nav nav-transparent"><iframe id="menu-principal" src="../header.html" frameborder="0" seamless></iframe></div>
 		<div id="pagina-historia">
+			<!-- Breadcrumbs -->
+			<div class="slideshow-container breadcrumbs">
+				<div style="background:url('../midias/images/banner-estacoes-sombra.png');"><center>
+					<h1 class="tit-geral">História</h1>
+					<p class="txt-geral">Entenda a origem do jogo!</p>
+				</center></div>
+			</div>
+			
+			<!-- Widget - Página anterior e próxima página -->
+			<div class="widget-ant-prox-page">
+				<div class="anterior">
+					<p class="txt-ant-prox">Faça download da versão beta do jogo!</p>
+					<a class="btn-geral" href="download.html" target="_parent"><i class="icn-btn-geral fa fa-arrow-circle-left"></i> Página anterior</a>
+				</div>
+				<div></div>
+				<div class="proximo">
+					<p class="txt-ant-prox">Saiba mais sobre cada um dos personagens!</p>
+					<a class="btn-geral" href="gemas.html" target="_parent">Próxima página <i class="icn-btn-geral fa fa-arrow-circle-right"></i></a>
+				</div>
+			</div>
+					
 			<div class="slideshow-container">
 				<!-- Inicio do slider -->
 				<div class="mySlides fade">
-				  <img src="../midias/images/primavera.jpg" style="width:100%; filter:brightness(0.5);">
-				</div>
-
-				<div class="mySlides fade">
-				  <img src="../midias/images/verao.jpg" style="width:100%; filter:brightness(0.5);">
-				</div>
-
-				<div class="mySlides fade">
-				  <img src="../midias/images/outono.jpg" style="width:100%; filter:brightness(0.5);">
+				  <img src="../midias/images/Slides_História_1.jpg" style="width:100%;">
 				</div>
 				
 				<div class="mySlides fade">
-				  <img src="../midias/images/inverno.jpg" style="width:100%; filter:brightness(0.5);">
+				  <img src="../midias/images/Slides_História_2.jpg" style="width:100%;">
+				</div>
+
+				<div class="mySlides fade">
+				  <img src="../midias/images/Slides_História_3.jpg" style="width:100%;">
+				</div>
+
+				<div class="mySlides fade">
+				  <img src="../midias/images/Slides_História_4.jpg" style="width:100%;">
+				</div>
+				
+				<div class="mySlides fade">
+				  <img src="../midias/images/Slides_História_5.jpg" style="width:100%;">
+				</div>
+				
+				<div class="mySlides fade">
+				  <img src="../midias/images/Slides_História_6.jpg" style="width:100%;">
+				</div>
+
+				<div class="mySlides fade">
+				  <img src="../midias/images/Slides_História_7.jpg" style="width:100%;">
+				</div>
+
+				<div class="mySlides fade">
+				  <img src="../midias/images/Slides_História_8.jpg" style="width:100%;">
+				</div>
+				
+				<div class="mySlides fade">
+				  <img src="../midias/images/Slides_História_9.jpg" style="width:100%;">
+				</div>
+				
+				<div class="mySlides fade">
+				  <img src="../midias/images/Slides_História_10.jpg" style="width:100%;">
+				</div>
+				
+				<div class="mySlides fade">
+				  <img src="../midias/images/Slides_História_11.jpg" style="width:100%;">
 				</div>
 
 				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 				<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 				<div style="text-align: center;position: relative;margin-top: -40px;">
-				  <span class="dot" onclick="currentSlide(1)"></span> 
-				  <span class="dot" onclick="currentSlide(2)"></span> 
-				  <span class="dot" onclick="currentSlide(3)"></span> 
-				  <span class="dot" onclick="currentSlide(4)"></span> 
+					<span class="dot" onclick="currentSlide(1)"></span> 
+					<span class="dot" onclick="currentSlide(2)"></span> 
+					<span class="dot" onclick="currentSlide(3)"></span> 
+					<span class="dot" onclick="currentSlide(4)"></span>
+					<span class="dot" onclick="currentSlide(5)"></span> 
+					<span class="dot" onclick="currentSlide(6)"></span> 
+					<span class="dot" onclick="currentSlide(7)"></span>
+					<span class="dot" onclick="currentSlide(8)"></span> 
+					<span class="dot" onclick="currentSlide(9)"></span> 
+					<span class="dot" onclick="currentSlide(10)"></span> 		
+					<span class="dot" onclick="currentSlide(11)"></span> 				  
 				</div>
-				</div>				
-				<!-- Final do slider -->
-		
-		</div>
+			</div>				
+			<!-- Final do slider -->
 			
-		<!-- Função para funcionamento do slide -->
-		<script>
-			var slideIndex = 1;
-			showSlides(slideIndex);
-
-			function plusSlides(n) {
-			  showSlides(slideIndex += n);
-			}
-
-			function currentSlide(n) {
-			  showSlides(slideIndex = n);
-			}
-
-			function showSlides(n) {
-			  var i;
-			  var slides = document.getElementsByClassName("mySlides");
-			  var dots = document.getElementsByClassName("dot");
-			  if (n > slides.length) {slideIndex = 1}    
-			  if (n < 1) {slideIndex = slides.length}
-			  for (i = 0; i < slides.length; i++) {
-				  slides[i].style.display = "none";  
-			  }
-			  for (i = 0; i < dots.length; i++) {
-				  dots[i].className = dots[i].className.replace(" active", "");
-			  }
-			  slides[slideIndex-1].style.display = "block";  
-			  dots[slideIndex-1].className += " active";
-			}
-		</script>
+			<!-- Widget - Página anterior e próxima página -->
+			<div class="widget-ant-prox-page">
+				<div class="anterior">
+					<p class="txt-ant-prox">Faça download da versão beta do jogo!</p>
+					<a class="btn-geral" href="download.html" target="_parent"><i class="icn-btn-geral fa fa-arrow-circle-left"></i> Página anterior</a>
+				</div>
+				<div></div>
+				<div class="proximo">
+					<p class="txt-ant-prox">Saiba mais sobre cada um dos personagens!</p>
+					<a class="btn-geral" href="gemas.html" target="_parent">Próxima página <i class="icn-btn-geral fa fa-arrow-circle-right"></i></a>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+	<footer><iframe id="rodape" src="../footer.html" frameborder="0"></iframe></footer>
 </html>

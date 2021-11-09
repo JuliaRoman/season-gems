@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Style+Script&display=swap" rel="stylesheet">
+		<link href="../fonts/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/c529ef0d01.js" crossorigin="anonymous"></script>
+		<link rel="icon" href="../midias/images/favicon.png" sizes="16x32" type="images.png" />
+		<script type="text/javascript" src="../functions.js"></script>
+		<title>Download - Season Geams</title>
+	</head>
+	
+	<body>
+		<div class="barra-nav nav-transparent"><iframe id="menu-principal" src="../header.html" frameborder="0" seamless></iframe></div>
+		<div id="pagina-download">
+			<!-- Breadcrumbs -->
+			<div class="slideshow-container breadcrumbs">
+				<div style="background:url('../midias/images/banner-estacoes-sombra.png');"><center>
+					<h1 class="tit-geral">Download</h1>
+					<p class="txt-geral">Realize o download da versão beta, e se divirta!</p>
+				</center></div>
+			</div>
+			
+			<!-- Conteúdo da página -->
+			<div class="container conteudo-download">
+				<div>
+					<p class="txt-geral" style="font-size:28px;">Faça o download a sua versão Beta e venha ajudar a bruxa Luna a resgatar as Seasons Gems e restaurar o mundo mágico de Ameth!</p>
+				</div>
+				<div>
+					<input value="Conheça o mundo de Ameth, e ajude a bruxinha Luna a concluir sua missão! Acesse o site: http://seasongems.atwebpages.com/ " id="url-destino"/>
+					<center style="margin:20px;"><button class="btn-geral" style="font-size:30px;padding: 5px 20px;" onclick="download()">Download <i class="icn-btn-geral fa fa-download"></i></button></center>
+					<center style="margin-bottom:10px;"><button onclick="copiarTexto()" class="links-download">Compartilhar jogo</button></center>
+					<center><a class="links-download" href="../midias/docs/SeasonGems.pdf" target="_blank">Manual do usuário</a></center>
+				</div>
+			</div>
+			
+			<!-- Formulário atualizações - Inicio -->	
+			<div class="form-atualizacoes">
+				<form action="/pagina-processa-dados-do-form" method=""><!-- Metodo não adicionado, será relacionado ao back-end -->
+					<div>
+						<label for="name">Receba atualizações sobre o jogo</label>
+					</div>
+					<div>
+						<input type="text" placeholder="Digite seu nome" id="name" />
+					</div>
+					<div>
+						<input type="email" placeholder="Digite seu e-mail" id="mail" />
+					</div>
+					<div class="button">
+						<button type="submit">Enviar</button>
+					</div>
+				</form>
+			</div>
+			<!-- Formulário atualizações - Final -->
+			
+			<!-- Widget - Página anterior e próxima página -->
+			<div class="widget-ant-prox-page" style="background-color:#494949;">
+				<div class="anterior">
+					<p class="txt-ant-prox">Já jogou a versão beta do Season Gems?</p>
+					<a class="btn-geral" href="contato.html"><i class="icn-btn-geral fa fa-arrow-circle-left"></i> Dê um feedback!</a>
+				</div>
+				<div></div>
+				<div class="proximo">
+					<p class="txt-ant-prox">Conheça a toda a história do jogo!</p>
+					<a class="btn-geral" href="historia.html"> Página de história<i class="icn-btn-geral fa fa-arrow-circle-right"></i></a>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+		
+	<footer><iframe id="rodape" src="../footer.html" frameborder="0"></iframe></footer>
+</html>

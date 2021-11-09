@@ -34,16 +34,14 @@ function trocaMenu(){
     });
 }
 
+window.onload=trocaMenu();
+
+
+/*** Funções para funcionamento de slider *** Início ***/
+var slideIndex = 1;
+
 function slider(){
-	var slideIndex = 1;
 	showSlides(slideIndex);
-
-function plusSlides(n) {
-	showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-	showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
@@ -64,4 +62,29 @@ function showSlides(n) {
 	
 	slides[slideIndex-1].style.display = "block";  
 	dots[slideIndex-1].className += " active";
-}}
+}
+
+function plusSlides(n) {
+	showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+	showSlides(slideIndex = n);
+}
+/*** Funções para funcionamento de slider *** Final ***/
+
+
+/*** Função que copia url ***/
+function copiarTexto() {
+        var textoCopiado = document.getElementById("url-destino");
+        textoCopiado.select();
+        textoCopiado.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        alert("A url do nosso site foi copiada com sucesso! Agora é só utilizar as teclas Ctrl+V e compartilhar com seus amigos!");
+   }
+ 
+
+/*** Função que realiza download do jogo ***/ 
+function download(){
+	window.location.href = "../midias/docs/Season_Gems.zip";
+}

@@ -21,6 +21,10 @@ body{
 	height: 4500px;
 }
 
+button {
+    background: none;
+}
+
 .tit-geral{
 	color:white;
 }
@@ -43,6 +47,7 @@ body{
 	background-size: 400%;
 	-webkit-transition: background 300ms ease-in-out;
 	transition: background 500ms ease-in-out;
+	cursor:pointer;
 }
 .btn-geral:hover {
 	background-position: 0;
@@ -85,6 +90,7 @@ body{
 	height: 80px;
     position: fixed;
     width: 100%;
+	z-index:1;
 }
 
 #menu-principal{
@@ -232,7 +238,8 @@ a.btn-menu-download:hover::after {
 	margin:50px;
 }
 
-/********** Accordion - FAQ **********/
+/********** FAQ **********/
+/********** Início Accordion**********/
 .accordion {
   background-color: #858585;
   color: white;
@@ -248,7 +255,7 @@ a.btn-menu-download:hover::after {
 }
 
 .active, .accordion:hover {
-  background-color: #7c128c!important;
+  background-color: #a805c3 !important;
 }
 
 .panel {
@@ -274,9 +281,14 @@ a.btn-menu-download:hover::after {
 }
 
 .faixas-accordion button:nth-child(1), .faixas-accordion button:nth-child(5), .faixas-accordion button:nth-child(9) {
-    background-color: #606060;
+    background-color: #494949;
 }
+/********** Final Accordion**********/
 
+.container.faq{
+	padding:80px!important;
+	background-color:#606060;
+}
 
 /********** Contato **********/
 #contato{
@@ -387,7 +399,7 @@ a.btn-menu-download:hover::after {
 /***** Formulário para atualizações *****/
 .form-atualizacoes {
     padding: 50px 100px;
-    background-color: #858585;
+    background-color: #606060;
 }
 
 .form-atualizacoes form {
@@ -444,7 +456,7 @@ a.btn-menu-download:hover::after {
     border-radius: 5px;
     width: 90%;
     color: white;
-    border: none;
+    border: 1px solid #606060;
     padding: 5px 10px;
 }
 
@@ -507,9 +519,9 @@ a.btn-menu-download:hover::after {
 /***** Simples *****/
 .widget-ant-prox-page{
 	display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 25% 50% 25%;
     padding: 50px 100px;
-    background-color: #858585;
+    background-color: #494949;
 }
 
 .txt-ant-prox{
@@ -520,6 +532,7 @@ a.btn-menu-download:hover::after {
 
 .proximo a, .proximo p {
     float: right;
+	text-align: right;
 }
 
 .anterior a, .anterior p {
@@ -531,14 +544,13 @@ a.btn-menu-download:hover::after {
 	display: grid;
     grid-template-columns: 70% 30%;
     padding: 50px 100px;
-    background-color: #858585;
 }
 
 /***** Personagens *****/
 .personagem{
 	display: grid;
     grid-template-columns: 50% 50%;
-	padding: 150px 20px;
+	padding: 75px 100px;
 }
 
 .img-personagem{
@@ -552,9 +564,10 @@ a.btn-menu-download:hover::after {
     filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
 }
 
+/***** Mapas *****/
 .mapas{
 	display: grid;
-    grid-template-columns: 35% 45% 20%;
+    grid-template-columns: 30% 50% 20%;
 }
 
 .inverno, .verao, .primavera, .outono{
@@ -584,6 +597,62 @@ a.btn-menu-download:hover::after {
 	color:#3e3e3e;
 }
 
+/***** Gemas *****/
+.gemas{
+	display: grid;
+    grid-template-columns: 50% 50%;
+	padding: 75px 100px;
+}
+
+.img-gemas{
+	transition: all 0.5s;
+}
+
+.img-gemas:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+	-webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+#pagina-gemas img.img-gemas, #pagina-gemas .conteudo-wiki {
+    max-height: 250px;
+}
+
+.img-gemas{
+	max-height: 350px;
+}
+
+.gema-right{
+	float: right;
+	margin-right: 100px;
+}
+
+.gema-left{
+	float: left;
+	margin-left: 100px;
+}
+
+.conteudo-inverno {
+	background-image: -webkit-linear-gradient(45deg, #0c646c 50%, transparent 50%)!important;
+	background-image: linear-gradient(45deg, #0c646c 50%, transparent 50%)!important;
+}
+
+.conteudo-outono{
+	background-image: -webkit-linear-gradient(45deg, #dc6e3b 50%, transparent 50%)!important;
+	background-image: linear-gradient(45deg, #dc6e3b 50%, transparent 50%)!important;
+}
+
+.conteudo-verao{
+	background-image: -webkit-linear-gradient(45deg, #5cb159 50%, transparent 50%)!important;
+	background-image: linear-gradient(45deg, #5cb159 50%, transparent 50%)!important;
+}
+
+.conteudo-primavera{
+	background-image: -webkit-linear-gradient(45deg, #9a169a 50%, transparent 50%)!important;
+	background-image: linear-gradient(45deg, 9a169a 50%, transparent 50%)!important;
+}
+
 /***** Conteúdo - Wiki (Personagens / Mapas / Gemas) *****/
 .conteudo-wiki .txt-geral {
     font-size: 22px;
@@ -602,7 +671,7 @@ a.btn-menu-download:hover::after {
 	background-image: linear-gradient(45deg, #a805c3 50%, transparent 50%);
 	-webkit-transition: background 300ms ease-in-out;
 	transition: background 500ms ease-in-out;
-	background-position: 100%;
+	background-position: 90%;
 	background-size: 400%;
 	margin-right:50px;
 }
@@ -611,6 +680,24 @@ a.btn-menu-download:hover::after {
 	background-position: 0;
 }
 
+/***** Conteúdo - Página de Download *****/
+.conteudo-download{
+	display: grid;
+    grid-template-columns: 60% 40%;
+    margin: 50px 0;
+}
+
+.links-download {
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#url-destino{
+	display:none!important;
+}
 
 /**********************************************************************************************
 SVG

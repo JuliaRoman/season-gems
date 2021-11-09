@@ -9,14 +9,45 @@
 		<link rel="icon" href="midias/images/favicon.png" sizes="16x32" type="images.png" />
 		<script type="text/javascript" src="functions.js"></script>
 		<title>Season Geams</title>
-		<div class="barra-nav nav-transparent"><iframe id="menu-principal" src="header.html" frameborder="0" seamless></iframe></div>
 	</head>
 	
-	<body>
-		
-		<iframe id="conteudo-pagina" name="iframe-conteudo" src="pages/home.html" frameborder="0" onload="trocaMenu()"></iframe>	
+	<body onload="slider()">
+		<div class="barra-nav nav-transparent"><iframe id="menu-principal" src="header.html" frameborder="0" seamless></iframe></div>
+		<div id="pagina-home">
+			<div class="slideshow-container">
+				<!-- Inicio do slider -->
+				<div class="mySlides fade">
+				  <img src="midias/images/primavera.jpg" style="width:100%; filter:brightness(0.5);">
+				</div>
 
-	</body>
+				<div class="mySlides fade">
+				  <img src="midias/images/verao.jpg" style="width:100%; filter:brightness(0.5);">
+				</div>
+
+				<div class="mySlides fade">
+				  <img src="midias/images/outono.jpg" style="width:100%; filter:brightness(0.5);">
+				</div>
+				
+				<div class="mySlides fade">
+				  <img src="midias/images/inverno.jpg" style="width:100%; filter:brightness(0.5);">
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<div style="text-align: center;position: relative;margin-top: -40px;">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span> 
+				  <span class="dot" onclick="currentSlide(4)"></span> 
+				</div>
+			</div>				
+			<!-- Final do slider -->
+		
+		</div>
+			
+		<!-- Função para funcionamento do slide -->
+	</body>	
 	
 	<iframe id="rodape" src="footer.html" frameborder="0"></iframe>
 	

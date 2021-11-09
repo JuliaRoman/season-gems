@@ -5,12 +5,14 @@
 		<link rel="stylesheet" href="../style.css">
 		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Style+Script&display=swap" rel="stylesheet">
 		<link href="../fonts/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
-		<link rel="icon" href="../images/favicon.png" sizes="16x32" type="images.png" />
-		<script type="text/javascript" src="functions.js"></script>
-		<title>Season Geams</title>
+		<script src="https://kit.fontawesome.com/c529ef0d01.js" crossorigin="anonymous"></script>
+		<link rel="icon" href="../midias/images/favicon.png" sizes="16x32" type="images.png" />
+		<script type="text/javascript" src="../functions.js"></script>
+		<title>Contato - Season Geams</title>
 	</head>
 	
 	<body>
+		<div class="barra-nav nav-transparent"><iframe id="menu-principal" src="../header.html" frameborder="0" seamless></iframe></div>
 		<div id="pagina-contato">
 			<!-- Breadcrumbs -->
 			<div class="slideshow-container breadcrumbs" style="background:url(../midias/images/banner-estacoes-sombra.png);height:350px;"><center>
@@ -40,7 +42,7 @@
 			<!-- Formulário atualizações - Final -->
 			
 			<!-- Formulário dúvidas/sugestões/feedback - Inicio -->	
-			<div class="form-comentario" style="background-color:#606060;">
+			<div class="form-comentario">
 				<form action="/pagina-processa-dados-do-form" method=""><!-- Metodo não adicionado, será relacionado ao back-end -->
 					<div>
 						<label for="name">Entre em contato com a nossa equipe!</label>
@@ -65,36 +67,26 @@
 			</div>
 			<!-- Formulário dúvidas/sugestões/feedback - Final -->
 			
-			<!-- Widget que direciona ao manual do usuário -->
-			<div class="widget-nova-page" style="grid-template-columns: 30% 70%;">
-				<div>
-					<a class="btn-geral" href="../midias/docs/manual_do_jogo___Season_Gems.pdf" target="_blank" style="float: left;margin: 35px 0;">Manual do usuário<i class="icn-btn-geral fa fa-arrow-circle-right"></i></a>
+			<!-- Widget que direciona ao manual do usuário e ao FAQ -->
+			<div class="widget-ant-prox-page" style="background-color: #606060;">
+				<div class="anterior">
+					<p class="txt-ant-prox">Tudo o que você precisa saber!</p>
+					<a class="btn-geral" href="../midias/docs/manual_do_jogo___Season_Gems.pdf" target="_blank"><i class="icn-btn-geral fa fa-arrow-circle-left"></i> Manual do usuário</a>
 				</div>
-				<div>
-					<h1 class="tit-geral" style="text-align:right;">Título</h1>
-					<p class="txt-geral" style="text-align:right;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+				<div></div>
+				<div class="proximo">
+					<p class="txt-ant-prox">Tire todas as suas dúvidas sobre o jogo!</p>
+					<a class="btn-geral" href="faq.html">Veja nosso FAQ <i class="icn-btn-geral fa fa-arrow-circle-right"></i></a>
 				</div>
 			</div>
 			
-			<!-- Widget que direciona a página faq -->			
-			<div class="widget-nova-page" style="background-color:#606060;">
-				<div>
-					<h1 class="tit-geral">Título</h1>
-					<p class="txt-geral">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-				</div>
-				<div>
-					<a class="btn-geral" href="faq.html" target="iframe-conteudo" style="float: right;margin: 35px 0;">FAQ<i class="icn-btn-geral fa fa-arrow-circle-right"></i></a>
-				</div>
-			</div>
 			
 			<!-- Widget que direciona a página de download do jogo -->
-			<div>
-				<div>
-					<h1 class="tit-geral" style="text-align:center;">Faça download da versão Beta do Jogo</h1>
-					<center><a class="btn-geral" href="download.html" target="iframe-conteudo" style="margin: 35px 0;">Download<i class="icn-btn-geral fa fa-arrow-circle-right"></i></a></center>
-				</div>
+			<div style="margin: 80px 0;">
+				<h1 class="tit-geral" style="text-align:center;">Faça download da versão Beta do Jogo</h1>
+				<center><a class="btn-geral" href="download.html" style="margin: 35px 0;">Download<i class="icn-btn-geral fa fa-arrow-circle-right"></i></a></center>
 			</div>
 
 	</body>
-
+	<footer><iframe id="rodape" src="../footer.html" frameborder="0"></iframe></footer>
 </html>
