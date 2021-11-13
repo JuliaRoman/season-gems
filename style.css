@@ -85,6 +85,16 @@ button {
   grid-template-columns: 50% 50%;
 }
 
+a.leia-mais {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+a.leia-mais:hover {
+    color: #a805c3;
+}
+
 /********** Menu Principal **********/
 .barra-nav{
 	height: 80px;
@@ -235,7 +245,21 @@ a.btn-menu-download:hover::after {
 
 /********** Home **********/
 #pagina-home .container{
-	margin:50px;
+	margin: 50px 20px;
+}
+
+.temas-wiki {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+	margin-bottom: 35px;
+}
+
+.personagens-home, .mapas-home, .gemas-home {
+    padding: 20px;
+}
+
+.temas-wiki .txt-geral {
+    margin-bottom: 30px;
 }
 
 /********** FAQ **********/
@@ -465,7 +489,7 @@ a.btn-menu-download:hover::after {
     color: white;
     font-size: 22px;
     padding: 5px 22px;
-    border: none;
+    border: 1px solid #606060;
     border-radius: 5px;
 }
 
@@ -478,12 +502,34 @@ a.btn-menu-download:hover::after {
     width: 40%!important;
 }
 
-.form-comentario input, .form-comentario textarea{
+.form-comentario input{
 	margin:0px 60px 30px 0px;
 }
 
 .form-comentario textarea{
 	height: 140px;
+}
+
+#aceito{
+	margin: 20px 0px;
+    width: 25px;
+}
+
+.aceito{
+	font-size:18px!important;
+}
+
+.aceito a {
+    text-decoration: none;
+    color: #dd31e6;
+}
+
+.form-atualizacoes:after {
+    content: ' * Ao clicar em enviar você concorda com os Termos e Políticas de Privacidade do site.';
+    position: absolute;
+    padding: 15px 0;
+    right: 310px;
+    color: #494949;
 }
 
 @media screen and (max-width: 1800px){
@@ -697,6 +743,17 @@ a.btn-menu-download:hover::after {
 
 #url-destino{
 	display:none!important;
+}
+
+/***** Política de Privacidade *****/
+.container.politica {
+    margin: 80px 0;
+    color: white;
+}
+
+.container.politica a {
+    color: #a805c3;
+    text-decoration: none;
 }
 
 /**********************************************************************************************

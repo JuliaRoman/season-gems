@@ -18,6 +18,10 @@
 				<!-- Inicio do slider -->
 				<div class="mySlides fade">
 				  <img src="midias/images/primavera.jpg" style="width:100%; filter:brightness(0.5);">
+				  <!--div class="conteudo-slide">
+					<h1 class="txt-slide">Faça download da versão beta do jogo!</h1>
+					<center style="margin:20px;"><button class="btn-geral" style="font-size:30px;padding: 5px 20px;" onclick="download()">Download <i class="icn-btn-geral fa fa-download"></i></button></center>
+				  </div-->
 				</div>
 
 				<div class="mySlides fade">
@@ -43,10 +47,104 @@
 				</div>
 			</div>				
 			<!-- Final do slider -->
-		
-		</div>
 			
-		<!-- Função para funcionamento do slide -->
+			<!-- Download -->
+			<div class="container conteudo-download">
+				<div>
+					<p class="txt-geral" style="font-size:28px;">Faça o download a sua versão Beta e venha ajudar a bruxa Luna a resgatar as Seasons Gems e restaurar o mundo mágico de Ameth!</p>
+				</div>
+				<div>
+					<input value="Conheça o mundo de Ameth, e ajude a bruxinha Luna a concluir sua missão! Acesse o site: http://seasongems.atwebpages.com/ " id="url-destino"/>
+					<center style="margin:20px;"><button class="btn-geral" style="font-size:30px;padding: 5px 20px;" onclick="download()">Download <i class="icn-btn-geral fa fa-download"></i></button></center>
+					<center style="margin-bottom:10px;"><button onclick="copiarTexto()" class="links-download">Compartilhar jogo</button></center>
+					<center><a class="links-download" href="../midias/docs/manual_do_jogo___Season_Gems.pdf" target="_blank">Manual do usuário</a></center>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- Formulário atualizações - Inicio -->	
+		<div class="form-atualizacoes">
+			<form action="/pagina-processa-dados-do-form" method=""><!-- Metodo não adicionado, será relacionado ao back-end -->
+				<div>
+					<label for="name">Receba atualizações sobre o jogo</label>
+				</div>
+				<div>
+					<input type="text" placeholder="Digite seu nome" id="name" />
+				</div>
+				<div>
+					<input type="email" placeholder="Digite seu e-mail" id="mail" />
+				</div>
+				<div class="button">
+					<button type="submit">Enviar</button>
+				</div>
+			</form>
+		</div>
+		<!-- Formulário atualizações - Final -->
+		
+		<!-- Historia -->
+			<div class="slideshow-container breadcrumbs" style="background:url(midias/images/banner-estacoes-sombra.png);height:350px;"><center style="padding-top: 145px;">
+				<a class="btn-geral" href="pages/historia.html" style="font-size: 30px;padding: 5px 20px;">História <i class="icn-btn-geral fa fa-arrow-circle-right"></i></a>
+				<p class="txt-geral">Conheça toda a história do jogo!</p>
+			</center></div>
+			
+		<!-- Personagens / Mapas / Gemas -->
+		<div class="temas-wiki container">
+			<div class="personagens-home">
+				<h1 class="tit-geral">Personagens</h1>
+				<p class="txt-geral">Conheça as personagens do jogo, a terrivel morgana que espera por você na missão perigosa da Bruxa Luna.</p>
+				<a class="btn-geral" href="pages/personagens.html">Leia mais <i class="icn-btn-geral fa fa-arrow-circle-right"></i></a>
+			</div>
+			<div class="mapas-home">
+				<h1 class="tit-geral">Mapas</h1>
+				<p class="txt-geral">Saiba quais são os cenários do jogo e que estação que cada um representa.</p>
+				<a class="btn-geral" href="pages/mapas.html">Leia mais <i class="icn-btn-geral fa fa-arrow-circle-right"></i></a>
+			</div>
+			<div class="gemas-home">
+				<h1 class="tit-geral">Gemas</h1>
+				<p class="txt-geral">Entenda quais são as gemas que existe no mundo mágico de Ameth e o que cada uma representa.</p>
+				<a class="btn-geral" href="pages/gemas.html">Leia mais <i class="icn-btn-geral fa fa-arrow-circle-right"></i></a>
+			</div>
+		</div>
+		
+		<!-- Widget que direciona ao manual do usuário e ao FAQ -->
+		<div class="widget-ant-prox-page" style="background-color: #606060;">
+			<div class="anterior">
+				<p class="txt-ant-prox">Tudo o que você precisa saber!</p>
+				<a class="btn-geral" href="midias/docs/manual_do_jogo___Season_Gems.pdf" target="_blank"><i class="icn-btn-geral fa fa-arrow-circle-left"></i> Manual do usuário</a>
+			</div>
+			<div></div>
+			<div class="proximo">
+				<p class="txt-ant-prox">Tire todas as suas dúvidas sobre o jogo!</p>
+				<a class="btn-geral" href="pages/faq.html">Veja nosso FAQ <i class="icn-btn-geral fa fa-arrow-circle-right"></i></a>
+			</div>
+		</div>
+		
+		<!-- Formulário dúvidas/sugestões/feedback - Inicio -->	
+		<div class="form-comentario">
+			<form action="/pagina-processa-dados-do-form" method=""><!-- Metodo não adicionado, será relacionado ao back-end -->
+				<div>
+					<label for="name">Entre em contato com a nossa equipe!</label>
+				</div>
+				<br><br>
+				<div class="metade-campos">
+					<input type="text" placeholder="Digite seu nome" id="name" />
+					<input type="email" placeholder="Digite seu e-mail" id="mail" />
+				</div>
+				<div>
+					<input type="text" placeholder="Digite o assunto da mensagem" id="subject" />
+				</div>
+				<div>
+					<textarea type="textarea" placeholder="Digite a mensagem" id="message" /></textarea>
+				</div>
+					<input type="checkbox" id="aceito" name="aceito" value="true"><label class="aceito" for="aceito">Li e concordo com os <a href="pages/politica-de-privacidade.html" target="_blank">Termos de Política e Privacidade</a> do site.</label>
+				<div class="button">
+					<button type="submit">Enviar</button>
+				</div>
+			</form>
+			<img src="midias/images/primavera.jpg" style="max-width: 100%;">
+		</div>
+		<!-- Formulário dúvidas/sugestões/feedback - Final -->
 	</body>	
 	
 	<iframe id="rodape" src="footer.html" frameborder="0"></iframe>
