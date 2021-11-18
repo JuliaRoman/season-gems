@@ -88,3 +88,5 @@ function copiarTexto() {
 function download(){
 	window.location.href = "../midias/docs/Season_Gems.zip";
 }
+
+

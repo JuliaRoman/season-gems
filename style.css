@@ -529,7 +529,7 @@ a.btn-menu-download:hover::after {
     position: absolute;
     padding: 15px 0;
     right: 310px;
-    color: #494949;
+    color: #fff;
 }
 
 @media screen and (max-width: 1800px){
