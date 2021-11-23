@@ -89,4 +89,21 @@ function download(){
 	window.location.href = "../midias/docs/Season_Gems.zip";
 }
 
+/*** Função de aviso de Cookies ***/
+/*** function avisoCookies() {
+  if (!localStorage.pureJavaScriptCookies) {
+    document.querySelector(".box-cookies").classList.remove('hide');
+  }
+  
+  const acceptCookies = () => {
+    document.querySelector(".box-cookies").classList.add('hide');
+    localStorage.setItem("pureJavaScriptCookies", "accept");
+  };
+  
+  const btnCookies = document.querySelector(".btn-cookies");
+  
+  btnCookies.addEventListener('click', acceptCookies);
+}***/
+
+
 

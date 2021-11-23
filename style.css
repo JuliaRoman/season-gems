@@ -210,9 +210,53 @@ a.btn-menu-download:hover::after {
     top: 5px;
 }
 
+#menu-mobile {
+    display:none;
+}
+
+@media screen and (max-width: 1000px) {
+  #menu-default {
+    display:none;
+  }
+  
+  #menu-mobile {
+    display:block;
+  }
+  
+  .img-logo {
+    max-height: 50px;
+    padding: 15px 0;
+  }
+}
+
+i.fa.fa-bars {
+    color: white;
+    font-size: 30px;
+    padding: 25px 0;
+}
+
 /**** Slide Show ****/
 .mySlides{
 	display:none;
+}
+
+.conteudo-slide {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 35%;
+}
+
+.conteudo-slide .txt-slide {
+    color: white;
+    margin: auto auto 50px auto;
+    text-transform: uppercase;
+	max-width: 75%;
+}
+
+#pagina-home .mySlides img{
+	width:100%;
+	filter:brightness(0.35);
 }
 
 
@@ -754,6 +798,42 @@ a.btn-menu-download:hover::after {
 .container.politica a {
     color: #a805c3;
     text-decoration: none;
+}
+
+/***** Aviso de Cookies *****/
+.box-cookies.hide {
+  display: none !important;
+}
+
+.box-cookies {
+  position: fixed;
+  background: rgba(0, 0, 0, .9);
+  width: 100%;
+  z-index: 998;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box-cookies .msg-cookies,
+.box-cookies .btn-cookies {
+  text-align: center;
+  padding: 25px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.box-cookies .btn-cookies {
+  background: #1e88e5;
+  cursor: pointer;
+  align-self: normal;
+}
+
+@media screen and (max-width: 600px) {
+  .box-cookies {
+    flex-direction: column;
+  }
 }
 
 /**********************************************************************************************
